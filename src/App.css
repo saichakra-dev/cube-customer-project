@@ -1,0 +1,86 @@
+/* App.css */
+
+.App {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.container {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+.sidebar {
+  width: 25%;
+  background-color: #f1f1f1;
+  overflow-y: auto;
+  border-right: 1px solid #ddd;
+  scrollbar-width: thin;
+  scrollbar-color: #000 #f1f1f1;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 10px;
+}
+
+.customer-card {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.customer-card:hover {
+  background-color: #eee;
+}
+
+.selected {
+  background-color: #ddd;
+  padding: 20px;
+}
+
+.details {
+  width: 75%;
+  padding: 200px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.center-heading {
+  margin-bottom: 10px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: center;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}

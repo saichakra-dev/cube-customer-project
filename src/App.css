@@ -24,7 +24,7 @@
 }
 
 .sidebar {
-  width: 25%;
+  width: 35%;
   background-color: #f1f1f1;
   overflow-y: auto;
   border-right: 1px solid #ddd;
@@ -46,7 +46,7 @@
 }
 
 .customer-card {
-  padding: 15px;
+  padding: 8px;
   border-bottom: 1px solid #ddd;
   cursor: pointer;
   transition: background-color 0.3s ease, padding 0.3s ease;
@@ -62,7 +62,7 @@
 }
 
 .details {
-  width: 75%;
+  width: 65%;
   padding: 200px;
   padding-top: 50px;
   text-align: center;
@@ -73,6 +73,7 @@
 }
 
 .image-grid {
+  margin-left: 30px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;

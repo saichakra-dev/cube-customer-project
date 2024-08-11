@@ -142,7 +142,7 @@ const App: React.FC = () => {
               onClick={() => handleCustomerClick(customer)}
             >
               <h2>Customer 0{customer.id}</h2>
-              <p>{customer.description.slice(0, 60)}...</p>
+              <p>{customer.description.slice(0, 180)}...</p>
             </div>
           ))}
         </div>
@@ -150,7 +150,7 @@ const App: React.FC = () => {
           {selectedCustomer && (
             <>
               <h2 className="center-heading">
-                Customer {selectedCustomer.id} Details
+                Customer {selectedCustomer.id} Details here
               </h2>
               <p>{selectedCustomer.description}</p>
               <div className="image-grid">
@@ -166,7 +166,7 @@ const App: React.FC = () => {
                         width: "200px",
                         height: "200px",
                         objectFit: "cover",
-                      }} // Style for small images
+                      }}
                     />
                   ))
                 )}
